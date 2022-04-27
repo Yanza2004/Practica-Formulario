@@ -1,83 +1,175 @@
-*{
+:root {
+    --color-h1: #000d4f;
+    --size-h1: 3rem;
+    --size-h2: 2rem;
+    --second-size-h1: 1.8rem;
+    --second-size-h2: 1rem;
+    --second-size-inputs: .8rem;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-}
-
-body{
-    background-color: rgb(43, 163, 147);
-    min-width: 375px;
-}
-
-.container{
-    align-items: center;
-    width: calc(90% -10%);
-    height:  calc(90% -10%);
-    padding: 1% 0;
     overflow: hidden;
-    
-
-
-}
-.formulario{
-    display: flex;
-    width: calc(90% -10% );
-    height: 60rem;
-    
+    min-width: 350;
 }
 
-.login{
-    display: block;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    width: calc(90% -10%);
-    height: auto;
-    padding: 2%;
+body {
+    background-image: url("/Practica formulario/img/SL.123119.26540.04.jpg");
+    background-size: cover;
+}
+
+.container {
     position: relative;
-}
-
-h1,h2{
-    color: rgba(0, 0, 0, 0.562) ;
-
-}
-a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.562) ;
-}
-.main-text{
-    font-size: 3rem;
-}
-.second-text{
-    margin: 1rem;
-}
-.login input{
-    height: 4rem;
-    list-style: none;
-    width: 100%;
-    font-size: 1.2rem;
-    background-color: rgb(230, 225, 225);
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(98% -2%);
+    padding: 2%;
+    margin: 2%;
+    min-width: 375px;
 
 }
 
-.login input::placeholder{
-    text-align: end;
-}
-
-.btn-login{
-    display: inline-block;
-    width: 100%;
-    margin: 1rem 0;
-    height:2rem;
-    border: 0px ;
+.formulario {
+    background-color: aliceblue;
+    align-content: center;
+    text-align: center;
     border-radius: 2rem;
+    width: 35rem;
+    height: 45rem;
+    margin: 3rem;
+    padding: 2rem;
+
+}
+
+h1,
+h2 {
+    color: var(--color-h1);
+}
+
+h1 {
+    margin: 1rem;
+    font-size: var(--size-h1);
+}
+
+h2 {
+    font-size: var(--size-h2);
+    margin: .1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.inputs-container {
+    position: relative;
+    display: block;
+    padding: .4rem;
+
+
+}
+
+.inputs-container input {
+    background-color: aliceblue;
+    padding: 0 0 0 2.5rem;
+    border: 2px black solid;
+    border-radius: .5rem;
+    width: 100%;
+    height: 3rem;
     font-size: 1.2rem;
-    background-color: rgb(206, 181, 43);
+
+
+}
+
+.inputs-container input::placeholder {
+    opacity: .3;
+
+}
+
+.inputs-container span {
+    opacity: .2;
+    position: absolute;
+    top: 1.15rem;
+    left: 1rem;
+}
+
+.btn-login {
+    width: 90%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #ffb100;
+
+}
+
+.sub-seccions {
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-h1);
+}
+
+.sub-seccions input {
+    margin-left: 1rem;
+    outline: none;
+}
+
+.sub-seccions a {
+    color: rgb(42, 77, 190);
+    margin-left: 7rem;
+    border-bottom: 2px dotted rgb(42, 77, 190);
+    outline: none;
+}
+
+.create-account {
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.create-account a {
+    color: rgb(42, 77, 190);
+    margin-left: 1;
+    border-bottom: 2px dotted rgb(42, 77, 190);
+    outline: none;
 }
 
 
+/* ------------- RESPOSIVE DESING------------ */
 
-.login span{
- position: absolute;   
+@media (max-width: 450px) {
+    * {
+        overflow: visible;
+    }
+
+    .container {
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .formulario {
+        width: auto;
+        height: 35rem;
+    }
+
+    h1 {
+        font-size: var(--second-size-h1);
+    }
+
+    h2 {
+        font-size: var(--second-size-h2);
+    }
+
+    .inputs-container input {
+        font-size: var(--second-size-inputs);
+    }
+
+    .inputs-container {
+        width: 13rem;
+    }
 }

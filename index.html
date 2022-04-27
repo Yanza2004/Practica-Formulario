@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="formulario">
-            <div class="login">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" user-scalable="0" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="formulario">
+                <span class="logo">
+                    <img src="/Practica formulario/img/LOGO ACTIVE SOUND PNG.png" alt="ActiveSound logo">
+                </span>
+                <h1>
+                    Welcome!
+                </h1>
                 <h1 class="main-text">Sing In</h1>
                 <h2 class="second-text-email second-text">Email Address</h2>
-                <div class="email">
+                <div class="inputs-container">
                     <span class="material-icons-outlined">email</span>
-                <input type="email" name="input-name" id="login-main" placeholder="example@gmail.com">
+                    <input type="email" name="input-name" id="login-main" placeholder="example@gmail.com"
+                        maxlength="38">
                 </div>
-                <h2 class="second-text-password second-text" >Password</h2>
-                <div class="password">
+                <h2 class="second-text-password second-text">Password</h2>
+                <div class="inputs-container">
                     <span class="material-icons-outlined">lock</span>
-                    <input type="password" name="input-pass" id="pass-main">
+                    <input type="password" name="input-pass" maxlength="38" autocomplete="off" id="pass-main">
                 </div>
-               
-                <button class="btn-login" type="submit"><a href="">Login</a></button>
+                <div class="sub-seccions">
+                    <label for="remember-check">
+                        <input type="checkbox" name="remember-me" id="remember-check"> <span>Remember me</span>
+                    </label>
+                    <a href="">Forgot your password?</a>
+                </div>
+                <a href="/Practica formulario/login.html"><button class="btn-login" type="submit">Login</button></a>
+                <div class="create-account">
+                    <span>You don't have an account yet</span> <a href="">Create one here</a>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
+
 </html>
