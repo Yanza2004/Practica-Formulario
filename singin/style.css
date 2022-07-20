@@ -1,0 +1,289 @@
+:root {
+    --color-h1: #ffffff;
+    --size-h1: 3rem;
+    --size-h2: 2rem;
+    --second-size-h1: 1.8rem;
+    --second-size-h2: 1rem;
+    --second-size-inputs: .8rem;
+    --size-main-menu: 1.1rem;
+    --size-sub-menu: .7rem;
+    --background-color: #294c60;
+    --second-Backgroud: #001B2E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    min-width: 350;
+}
+
+body {
+    background-color: var(--background-color);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(98% -2%);
+    padding: 2%;
+    margin: 2%;
+    min-width: 375px;
+
+}
+
+.formulario {
+    background-color: var(--second-Backgroud);
+    align-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    width: 35rem;
+    height: 45rem;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.formulario:hover {
+    box-shadow: 6px 6px 6px white;
+}
+
+h1,
+h2 {
+    color: var(--color-h1);
+}
+
+h1 {
+    margin: 1rem;
+    font-size: var(--size-h1);
+}
+
+h2 {
+    font-size: var(--size-h2);
+    margin: .1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    list-style: none;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+.inputs-container {
+    position: relative;
+    display: block;
+    padding: .4rem;
+
+
+}
+
+.inputs-container input {
+    background-color: aliceblue;
+    padding: 0 0 0 2.5rem;
+    border: 2px black solid;
+    border-radius: .5rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.inputs-container input::placeholder {
+    opacity: .3;
+
+}
+
+.inputs-container span {
+    opacity: .2;
+    position: absolute;
+    top: 1.15rem;
+    left: 1rem;
+}
+
+.btn-login {
+    width: 90%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #ffb100;
+
+}
+
+.sub-seccions {
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-h1);
+}
+
+.sub-seccions input {
+    margin-left: 1rem;
+    outline: none;
+}
+
+.sub-seccions a {
+    color: var(--color-h1);
+    margin-left: 7rem;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.create-account {
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.create-account a {
+    color: var(--color-h1);
+    margin-left: 1;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.create-account span {
+    color: var(--color-h1);
+}
+
+
+/* ------------- RESPOSIVE DESING------------ */
+
+@media (max-width: 450px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        min-width: 350;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--second-Backgroud);
+    }
+
+    .container {
+        margin-top: 0;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        overflow: scroll;
+    }
+
+    .formulario {
+        margin-top: 2.2rem;
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+        padding-top: 13%;
+        height: 60rem;
+
+    }
+    .formulario:hover{
+        box-shadow: none;
+
+    }
+
+    h1 {
+        font-size: var(--second-size-h1);
+    }
+
+    h2 {
+        font-size: var(--second-size-h2);
+    }
+
+    .inputs-container input {
+        font-size: var(--second-size-inputs);
+    }
+
+    .inputs-container {
+        width: 20rem;
+    }
+
+    .sub-seccions input {
+        margin: .01rem;
+    }
+
+    .sub-seccions span {
+        font-size: .8rem;
+    }
+
+    .sub-seccions a {
+        display: inline;
+        font-size: .8rem;
+        margin-left: 3.3rem;
+
+    }
+
+    .create-account {
+        margin: 1rem;
+        font-size: .8rem;
+    }
+
+    .create-account a {
+        color: var(--color-h1);
+        margin-left: 1;
+        border-bottom: 2px dotted rgb(42, 77, 190);
+        outline: none;
+    }
+
+}
+
+
+/* CREATE ACCOUNT STYLES */
+.back-btn-container {
+
+    position: absolute;
+    right: 10rem;
+    list-style: none;
+}
+
+.back-btn {
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    background-color: white;
+
+}
+
+#back-btn, #back-login-page{
+    color: var(--color-h1);
+    position: absolute;
+    left: 14rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+
+#back-btn span, #back-login-page span {
+    font-size: 3rem;
+}
+
+#back-btn:hover, #back-login-page:hover{
+    color: rebeccapurple;
+}
+.create-account-btn{
+    height: 2.5rem;
+    margin: .3rem;
+    color: var();
+    cursor: pointer;
+}
+
+/* alerta ususario  */
+.alerta-usuario {
+    position: absolute;
+    top: 2rem;
+    color: var(--color-h1);
+    background-color: #a11528;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
