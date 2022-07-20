@@ -1,0 +1,248 @@
+:root {
+    --color-h1: #fff;
+    --size-h1: 3rem;
+    --size-h2: 2rem;
+    --second-size-h1: 1.8rem;
+    --second-size-h2: 1rem;
+    --second-size-inputs: .8rem;
+    --size-main-menu: 1.1rem;
+    --size-sub-menu: 1.4rem;
+    --background-color: #294c60;
+    --second-Backgroud: #001B2E;
+    --background-menu: #adb6c4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 350;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+
+h1,
+h2 {
+    color: var(--color-h1);
+}
+
+h1 {
+    margin: 1rem;
+    font-size: var(--size-h1);
+}
+
+h2 {
+    font-size: var(--size-h2);
+    margin: .1rem;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+button {
+    list-style: none;
+}
+
+li,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.container {
+    width: 90;
+    margin: 2rem;
+    padding: 1rem;
+    /* outline: red solid 2px; */
+}
+
+.menu-container {
+    /* outline: red solid 2px; */
+    background-color: var(--second-Backgroud);
+    position: relative;
+    display: flex;
+
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-cont-list {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .1rem;
+}
+
+.nav-cont-list button {
+    color: var(--color-h1);
+    background-color: transparent;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: var(--size-main-menu);
+    font-weight: bold;
+
+}
+
+
+
+.sub-menu ul {
+    background-color: var(--second-Backgroud);
+    margin-top: 1.5rem;
+    padding: 1.1rem;
+    box-shadow: 2px 2px 10px white;
+}
+
+
+
+.sub-1 {
+    color: var(--color-h1);
+    position: absolute;
+    margin-left: 6rem;
+    top: 5rem;
+    left: 10rem;
+    text-align: center;
+    display: none;
+
+
+}
+
+.sub-2 {
+    color: var(--color-h1);
+    position: absolute;
+    margin-left: 7.2rem;
+    top: 5rem;
+    left: 16rem;
+    text-align: center;
+    display: none;
+}
+
+.sub-3 {
+    color: var(--color-h1);
+    position: absolute;
+    margin-left: 7.2rem;
+    top: 5rem;
+    left: 23.5rem;
+    text-align: center;
+    display: none;
+}
+
+
+
+.sub-menu a,
+.sub-menu li {
+    color: var(--color-h1);
+    font-size: var(--size-sub-menu);
+    margin-top: 10px;
+    padding: 1rem;
+
+
+}
+
+/* .nav-cont-list:hover .sub-menu {
+    display: block;
+} */
+
+.el-2:hover .sub-1 {
+    display: block;
+}
+
+.el-3:hover .sub-2 {
+    display: block;
+}
+
+.el-4:hover .sub-3 {
+    display: block;
+}
+
+
+.el-1::before,
+.el-2::before,
+.el-3::before,
+.el-4::before,
+.el-5::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: white;
+    position: absolute;
+    bottom: 3rem;
+    transition: all .3s;
+    z-index: 1;
+}
+
+
+.el-2::after,
+.el-3::after,
+.el-4::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid #ffffff;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    margin-top: .1rem;
+    transform: rotate(100grad);
+    margin-left: -.6rem;
+}
+
+
+.el-1:hover::before,
+.el-2:hover::before,
+.el-3:hover::before,
+.el-4:hover::before,
+.el-5:hover::before {
+    width: 10%;
+}
+
+
+.nav-cont-list span {
+    color: var(--color-h1);
+}
+
+.el-6::after {
+    content: "/";
+    color: var(--color-h1);
+    font-size: 2rem;
+}
+
+.userData {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.el-6 a,
+.el-7 a {
+    color: var(--color-h1);
+    margin: .5rem;
+}
+
+
+
+/* logo active sound styles */
+.logo img {
+    display: block;
+    width: 10rem;
+}
+
+
+.popular-clips {
+    margin-top: 1rem;
+    width: 100%;
+    height: 250px;
+    background-color: yellow;
+}
+
+

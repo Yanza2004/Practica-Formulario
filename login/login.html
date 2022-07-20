@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" user-scalable="0" content="width=device-width, initial-scale=1.0">
+        <title>Active Sound</title>
+        <!-- ------------------------------ICON FAVICON--------------------------- -->
+        <link rel="shortcut icon" href="../img/LOGO ACTIVE SOUND PNG.png" type="image/x-icon">
+        <!----------------------------------------- STYLES------------------------------------- -->
+        <link rel="stylesheet" href="style.css">
+        <!-- -------------------------ICONS----------------------------------------------------- -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    </head>
+
+    <body>
+        <div class="container">
+            <template id="alert-user">
+                <span class="alerta-usuario">
+                    Usuario Incorrecto
+                </span>
+            </template>
+
+            <!-- -------------------------MAIN FORM ------------------------------------------- -->
+            <div class="formulario">
+                <button id="back-login-page">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_left
+                    </span>
+                </button>
+                <span class="logo">
+                    <img src="../img/LOGO ACTIVE SOUND PNG.png" alt="ActiveSound logo">
+                </span>
+                <h1>
+                    Welcome!
+                </h1>
+                <h1 class="main-text">Sing In</h1>
+                <form id="user-form" action="">
+                    <!-- ---------------------EMAIL INPUT -->
+                    <h2 class="second-text-email second-text">Email Address</h2>
+                    <div class="inputs-container">
+                        <span class="material-icons-outlined">email</span>
+                        <input type="email" name="input-name" id="login-main" placeholder="example@gmail.com"
+                            maxlength="38">
+                    </div>
+                    <!-- ------------------PASS INPUT----------------------------------- -->
+                    <h2 class="second-text-password second-text">Password</h2>
+                    <div class="inputs-container">
+                        <span class="material-icons-outlined">lock</span>
+                        <input type="password" placeholder="******" name="input-pass" maxlength="38" autocomplete="off"
+                            id="pass-main">
+                    </div>
+                    <div class="sub-seccions">
+                        <label for="remember-check">
+                            <input type="checkbox" name="remember-me" id="remember-check"> <span>Remember me</span>
+                        </label>
+                        <a href="">Forgot your password?</a>
+                    </div>
+                    <button id="submit-btn" class="btn-login" type="btn">Login</button>
+                </form>
+                <div class="create-account">
+                    <span>You don't have an account yet</span> <a href="sigin.html">Create one here</a>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------LINK JS--------------------------------------------->
+        <script src="index.js"></script>
+    </body>
+
+</html>
